@@ -1,22 +1,22 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("PrynceWare", "DarkTheme")
+local Window = Library.CreateLib("PrynceWare WIP", "DarkTheme")
 
 
-local Test = Window:NewTab("W and J")
+local Test = Window:NewTab("Main")
 local TestSection = Test:NewSection("Test Selection")
 
-TextSelection:NewSlider("Walk", "SliderInfo", 500, 16, function(s)
+TestSection:NewSlider("Walk", "niggas walkspeed", 500, 16, function(s)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 
-TextSelection:NewSlider("Jump", "SliderInfo", 500, 16, function(s)
+TestSection:NewSlider("Jump", "ughh. you are soo lazyyy", 500, 16, function(s)
     game.Players.LocalPlayer.Character.Humanoid.JumpHeight = s
 end)
 
 
 
-TextSelection:NewLabel("UI Toggle")
+TestSection:NewLabel("UI Toggle")
 
-TextSelection:NewSlider("Toggle UI", "KeybindInfo", Enum.KeyCode.RightControl, function()
+TestSection:NewKeybind("Toggle UI", "p = penis", Enum.KeyCode.RightControl, function()
     Library:ToggleUI()
 end)
